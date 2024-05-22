@@ -1,0 +1,32 @@
+\documentclass[../main]{subfiles}
+\begin{document}
+ 
+ \section{Subgoups}
+ 
+ \subsection{Definition and Examples}
+ 
+ \begin{prop}
+  (The Subgroup Criterion) A subset H of a group G is a subgroup if and only if 
+  \begin{enumerate}
+   \item $H\neq \emptyset$, and 
+   \item for all $x,y \in H, xy^{-1}\in H$
+  \end{enumerate}
+ \end{prop}
+ 
+ \setcounter{subsection}{+2}
+
+ \subsection{Cyclic Groups and Cyclic Subgroups}
+ 
+ \begin{prop}
+  If $H=\langle x\rangle$, then $|H|=|x|$. Moreover,
+  \begin{enumerate}
+   \item if $|H| = n < \infty $, then $x^n = 1$ and $1,x,x^2,\ldots,x^{n-1}$ are all distinct elements of H, and 
+   \item if $|H|= \infty$, then $x^n \neq 1$ for all $n \neq 0$ and $x^a \neq x^b$ for all $a\neq b \in \mathbb{Z}$.
+  \end{enumerate}
+
+ \end{prop}
+
+ 
+ 
+ 
+\end{document}
