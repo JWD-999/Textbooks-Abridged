@@ -8,7 +8,7 @@
  
  
  \begin{dfn}
-  \begin{enumerate}
+  ~\begin{enumerate}
    \item A \textit{binary operation} $\star$ on a set $G$ is a function $\star \colon G\times G \to G$. For any $a,b\in G$ we shall write $a\star b$ for $\star (a,b)$.
    \item A binary operation $\star$ on a set $G$ is associative if for all $a,b,c\in G$ we have $a\star (b\star c)=(a\star b)\star c$.
    \item If $\star$ is a binary operation on a set $G$ we say elements $a$ and $b$ of $G$ \textit{commute} if $a\star b = b\star a$. We say $\star$ (or $G$) is \textit{commutative} if for all $a,b\in G$, $a\star b = b\star a$.
@@ -50,7 +50,7 @@
  \end{dfn}
 
 
- \begin{rmk}
+ \begin{nt}
   If $\phi \colon G\to H$ is an isomorphism then 
   \begin{enumerate}
    \item $|G| = |H|$
@@ -58,7 +58,7 @@
    \item for all $x\in G, |x| = |\phi (x)|$
   \end{enumerate}
 
- \end{rmk}
+ \end{nt}
 
 
  \subsection{Group Actions}
@@ -73,7 +73,7 @@
  \end{dfn}
 
  
- \begin{rmk}
+ \begin{nt}
   Let the group $G$ act on the set $A$. From each fixed $g\in G$ we get a map $\sigma_g$ defined by 
   \begin{align*}
    &\sigma_g \colon A \to A \\
@@ -84,15 +84,15 @@
    \item for each fixed $g\in G$, $\sigma_g$ is a permutation of A, and 
    \item the map from $G$ to $S_A$ defined bt $g\mapsto \sigma_g$ is a homomorphism. Moreover this map is called the \textit{permuation representation} associated to the given action. 
   \end{enumerate}
- \end{rmk}
+ \end{nt}
 
- \begin{rmk}
+ \begin{nt}
   As a consequence of the above remark, if $\phi \colon G \to S_A$ is a homomorphism (here $S_A$ is the symmetric group on the set A), then the map from $G\times A$ to $ A$ defined by 
   \begin{align*}
    g\cdot a = \phi(g)(a) \text{for all} g\in G \text{, and all} a\in A
   \end{align*}
   is a group action of $G$ on $A$.
- \end{rmk}
+ \end{nt}
 
  
 \end{document}
