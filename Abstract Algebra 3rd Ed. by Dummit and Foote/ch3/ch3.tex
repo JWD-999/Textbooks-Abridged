@@ -22,7 +22,7 @@
   \begin{enumerate}
    \item $\phi(1_G)=1_H$, where $1_G$ and $1_H$ are the identities of $G$ and $H$, respectively.
    \item $\phi(g^{-1})=\phi(g)^{-1}$ for all $g\in G$.
-   \item $\phi(g^n)=\phi(g)^n$ for all $n\in \mathbb{Z}$.
+   \item $\phi(g^n)=\phi(g)^n$ for all $n\in \Z$.
    \item ker$\phi$ is a subgroup of $G$.
    \item im$\phi$, the image of $G$ uner $\phi$, is a subgorup of $H$.
   \end{enumerate}
@@ -81,14 +81,14 @@
   
   
   \begin{dfn}
-   The element $gng^{-1}$ is called the \textit{conjugate} of $n\in N$ by $g$. The set $gNg^{-1}=\{gng^{-1}\mid n\in N\}$ is called the \textit{conjugate} of $N$ by $g$. The element $g$ is said to \textit{normalize} $N$ if $gNg^{-1} = N$. A subgroup $N$ of a group $G$ is called \textit{normal} if every element of $G$ normalizes $N$, i.e., if $gNg^{-1} = N$ for all $g\in G$. If $N$ is a normal subgoup of $G$ we shall write $N \trianglelefteq G$. 
+   The element $gng^{-1}$ is called the \textit{conjugate} of $n\in N$ by $g$. The set $gNg^{-1}=\{gng^{-1}\mid n\in N\}$ is called the \textit{conjugate} of $N$ by $g$. The element $g$ is said to \textit{normalize} $N$ if $gNg^{-1} = N$. A subgroup $N$ of a group $G$ is called \textit{normal} if every element of $G$ normalizes $N$, i.e., if $gNg^{-1} = N$ for all $g\in G$. If $N$ is a normal subgoup of $G$ we shall write $N \nor G$. 
   \end{dfn}
   
   
   \begin{thm}
    Let $N$ be a subgroup of the group $G$. The following are equivalent:
    \begin{enumerate}
-    \item $N \trianglelefteq G$
+    \item $N \nor G$
     \item $N_G(N)=G$ (recall $N_G(N)$ is the normalizer in $G$ of $N$)
     \item $gN=Ng$ for all $g\in G$
     \item the operation on left cosets of $N$ in $G$ described in Proposition 5 makes the set of left cosets into a group
@@ -103,16 +103,108 @@
   
   
   \begin{dfn}
-   Let $N \trianglelefteq G$. The homomorphism $\pi \colon G \to G/N$ defined by $\pi(g)=gN$ is called the \textit{natural projection (homomorphism)} of $G$ onto $G/N$. If $\overline{H} \leq G/N$ is a subgroup of $G/N$, the \textit{complete preimage} of $\overline{H}$ in $G$ is the preimage of $\overline{H}$ under the natural projection homomorphism. 
+   Let $N \nor G$. The homomorphism $\pi \colon G \to G/N$ defined by $\pi(g)=gN$ is called the \textit{natural projection (homomorphism)} of $G$ onto $G/N$. If $\overline{H} \leq G/N$, then \textit{complete preimage} of $\overline{H}$ in $G$ is the preimage of $\overline{H}$ under the natural projection homomorphism. 
   \end{dfn}
   
   
   \subsection{More on Cosets and Lagrange's Thoerem}
-
-
-
-
   
   
+  \begin{thm}
+   (\textit{Lagrange's Theorem}) If $G$ is a fintite group and $H$ is a subgroup of $G$, then the order of $H$ divides the order of $G$ and the number of left cosets of $H$ in $G$ equals $\frac{|G|}{|H|}$.
+  \end{thm}
+  
+  
+  \begin{dfn}
+   If $G$ is a group and $H\leq G$, the number of left cosets of $H$ in $G$ is called the \textit{index} of $H$ in $G$ and is denoted by $|G:H|$.
+  \end{dfn}
+  
+  
+  \begin{cor}
+   If $G$ is a finite group and $x\in G$, then the order of $x$ divides the order of $G$. In particular, $x^{|G|}=1$ for all $x$ in $G$.
+  \end{cor}
+  
+  
+  \begin{cor}
+   If $G$ is a group of prime order  $p$, then $G$ is cyclic, hence $G \cong Z_p$ (note that this text uses $Z_n$ to denote the cyclic group of order $n$ written in multipicative notation and that given any $n\in \Z$, $Z_n \cong \Z/n\Z)$.
+  \end{cor}
+  
+  
+  \begin{nt}
+   For finite abelian groups the full converse of Lagrange's theorem holds, that is the group has a subgroup of order $n$ for each $n$ that divides the order of the group. 
+  \end{nt}
+  
+  
+  \begin{thm}
+   (Cauchy's Thoerem) If $G$ is a fintite group and $p$ is a prime dividing $|G|$, then $G$ has an element of order $p$.
+  \end{thm}
+  
+  
+  \begin{thm}
+   (Sylow) If $G$ is a finite group of order $p^\alpha m$, where $p$ is a prime not dividing $m$, then $G$ has a subgroup of order $p^\alpha$.
+  \end{thm}
+  
+  
+  \begin{dfn}
+   Let $H$ and $K$ be subgroups of a group and define
+   \begin{align*}
+    HK = \{hk \mid h\in H, k\in K\}.
+   \end{align*}
+  \end{dfn}
+  
+  
+  \begin{prop}
+   If $H$ and $K$ are finte subgroups of a group then 
+   \begin{align*}
+    |HK|=\frac{|H||K|}{|H\cap K|}.
+   \end{align*}
+  \end{prop}
+  
+  
+  \begin{prop}
+   If $H$ and $K$ are subgroups of a group, $HK$ is a subgroup if and only if $HK=KH$.
+  \end{prop}
+  
+  
+  \begin{nt}
+   $HK=KH$ does not imply that the elements of $H$ commute with the elements of $K$
+  \end{nt}
+  
+  
+  \begin{cor}
+   If $H$ and $K$ are subgroups of $G$ and $H\leq N_G(K)$, then $Hk$ is a subgroup of $G$. In particular, if $K \nor G$, Then $HK\leq G$ for any $H \leq G$ (Since if $K \nor G$, $N_G(k)=G$).
+  \end{cor}
+  
+  
+  \begin{dfn}
+   If $A$ is any subset of $N_G(K)$ (or $C_G(K)$), we shall say $A$ \textit{normalizes} $K$ (\textit{centralizes} $K$, respectively).
+  \end{dfn}
+  
+  
+  \subsection{The Isomorphism Thoerems}
+  
+  
+  \begin{thm}
+   (The First Isomorphism Theorem) If $\phi \colon G\to H$ is a homomorphism, then ker$\phi \nor G$ and $G/$ker$\phi \cong \phi(G)$.
+  \end{thm}
+  
+  
+  \begin{cor}
+   Let $\phi \colon G\to H$ be a homomorphism.
+   \begin{enumerate}
+    \item $\phi$ is injective if and only if ker$\phi = 1$.
+    \item $|G:$ker$\phi = |\phi(G)|$.
+   \end{enumerate}
+  \end{cor}
+  
+  
+  \begin{thm}
+   
+  \end{thm}
+
+
+
+
+
   
 \end{document}

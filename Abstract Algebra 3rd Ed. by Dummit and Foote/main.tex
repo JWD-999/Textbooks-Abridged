@@ -1,32 +1,42 @@
 \documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[utf8]{inputenc}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{amsmath}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[a4paper, margin=1in]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setcounter{section}{-1}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Theorem environments
 \theoremstyle{definition}
 \newtheorem{thm}{Theorem}
 \newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
 \newtheorem*{dfn}{Definition}
 \newtheorem*{nt}{Note}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Commands
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\nor}{\trianglelefteq}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{subfiles} % Best loaded last in the preamble
 
-
-%opening
 \title{Dummit and Foote Abridged}
+\author{}
 
 \begin{document}
 
 \maketitle
 \tableofcontents
 
-
+\setcounter{section}{-1} %To start as section 0
 
 \subfile{ch0/ch0}
 
