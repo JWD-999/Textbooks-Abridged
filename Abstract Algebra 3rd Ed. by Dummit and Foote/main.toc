@@ -13,3 +13,5 @@
 \contentsline {subsection}{\numberline {3.1}Definitions and Examples}{5}{}%
 \contentsline {subsection}{\numberline {3.2}More on Cosets and Lagrange's Thoerem}{7}{}%
 \contentsline {subsection}{\numberline {3.3}The Isomorphism Thoerems}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Composition Series and the H\"{o}lder Program}{9}{}%
+\contentsline {subsection}{\numberline {3.5}Transpositions and the Alternating Group}{9}{}%

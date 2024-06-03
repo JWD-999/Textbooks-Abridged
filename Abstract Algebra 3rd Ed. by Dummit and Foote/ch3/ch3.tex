@@ -225,29 +225,140 @@
     \item $A \nor G$ if and only if $\overline{A} \nor \overline{G}$.
    \end{enumerate}
   \end{thm}
-
-
-
-
   
   
+  \subsection{Composition Series and the H\"{o}lder Program}
   
   
+  \begin{prop}
+   If $G$ is a finite abelian group and $p$ is a prime dividing $|G|$, then $G$ contains an element of order $p$.
+  \end{prop}
   
   
+  \begin{dfn}
+   A group $G$ is called \textit{simple} if $|G| > 1$ and the only normal subgroups of $G$ are $1$ and $G$.
+  \end{dfn}
   
   
+  \begin{dfn}
+   In a group $G$ a sequence of subgroups 
+   \begin{align*}
+    1 = N_0 \leq N_1 \leq N_2 \leq \ldots \leq N_{k-1} \leq N_k = G
+   \end{align*}
+   is called a composition series if $N_i \nor N_{i+1}$ and $N_{i+1}/N_i$ is a simple group, $0\leq i\leq k-1$. If the above sequence is a composition series, the quotient groups $N_{i+1}/N_i$ are called \textit{composition factors} of $G$.
+  \end{dfn}
   
   
+  \begin{thm}
+   (Jordan-H\"{o}lder) Let $G$ be a fintie group with $G \neq 1$. Then 
+   \begin{enumerate}
+    \item $G$ has a composition series and 
+    \item The composition factors in a composition series are unique, namely, id $1=N_0\leq N_1 \leq \ldots \leq N_r = G$ and $1 = M_0 \leq M_1 \leq \ldots \leq M_s = G$ are two composition series for $G$, then $r=s$ and there is some permutation, $\pi$, of $\{1,2,\ldots,r\}$ such that 
+    \begin{align*}
+     M_{\pi(i)}/M_{\pi(i)-1} \cong N_i/N_{i-1}, \qquad 1\leq i\leq r.
+    \end{align*}
+   \end{enumerate}
+  \end{thm}
   
   
+  \begin{thm*}
+   There is a list consisting of 18 (infinite) familes of simple groups and 26 simples groups not belonging to these famileies (the \textit{sporadic} simple groups) such that every fintie simple group is isomorphic to one of the groups in this list.
+  \end{thm*}
   
   
+  \begin{thm*}
+   (Feit-Thompson) If $G$ is a simple group of odd order, then $G \cong Z_p$ for some prime $p$.
+  \end{thm*}
   
   
+  \begin{dfn}
+   A group $G$ is \textit{solvable} if there is a chain of subgroups
+   \begin{align*}
+    1=G_0 \nor G_1 \nor \ldots \nor G_s = G 
+   \end{align*}
+   such that $G_{i+1}/G_i$ is abelian for $i = 0,1,\ldots , s-1$.
+  \end{dfn}
   
-
-
-
+  
+  \begin{thm*}
+   The finite group $G$ is solvable if and only if for every divisor n of $|G|$ such that $(n, \frac{|G|}{n})=1$, $G$ has a subgroup of order $n$.
+  \end{thm*}
+  
+  
+  \begin{nt}
+   If $N$ and $G/N$ are solvable, then so is $G$.
+  \end{nt}
+  
+  
+  \subsection{Transpositions and the Alternating Group}
+  
+  
+  \begin{dfn}
+   A 2-cycle is called a \textit{transposition}.
+  \end{dfn}
+  
+  
+  \begin{nt}
+   Every element of $S_n$ may be written as a product of transpositions.
+  \end{nt}
+  
+  
+  \begin{dfn}
+   Let $x_1,\ldots,x_n$ be independent variables and let $\Delta$ be the polynomial 
+   \[\Delta = \prod_{1\leq i < j \leq n} (x_i - x_j),\] 
+   and for $\sigma \in S_n$ let $\sigma$ act on $\Delta$ by
+   \[\sigma(\Delta)= \prod_{1\leq i < j \leq n} (x_{\sigma(i)} - x_{\sigma(j)}).\]
+   One can show that for all $\sigma \in S_n$ that $\sigma(\Delta) = \pm \Delta$. Now define,
+   \begin{equation*}
+    \epsilon(\sigma)= 
+   \begin{cases}
+    +1 & \text{ if } \sigma(\Delta) = \Delta \\
+    -1 & \text{ if } \sigma(\Delta) = -\Delta.
+   \end{cases}
+   \end{equation*}
+   Now, 
+   \begin{enumerate}
+    \item $\epsilon(\sigma)$ is called the sign of $\sigma$ and 
+    \item $\sigma$ is call an \textit{even permutation} if $\epsilon(\sigma) = 1$ and an \textit{odd permutation} if $\epsilon(\sigma) = -1$.
+   \end{enumerate}
+  \end{dfn}
+  
+  
+  \begin{prop}
+   The map $\epsilon \colon S_n \to \{\pm 1\}$ is a homomorphism (where $\{\pm 1 \}$ is a multipicative version of the cyclic group of order 2).
+  \end{prop}
+  
+  
+  \begin{prop}
+   Transpositions are all odd permutations and $\epsilon$ is a surjective homomorphism.
+  \end{prop}
+  
+  
+  \begin{dfn}
+   The \textit{alternating group of degree n}, denoted $A_n$, is the kernel of te homomorphism $\epsilon$ (i.e., the set of even permutations).
+  \end{dfn}
+  
+  \begin{nt}
+  ~\begin{enumerate}
+   \item $|A_n| = \frac{1}{2} |S_n| = \frac{1}{2} (n!)$.
+   \item Due to $\epsilon$ being a homomorphism we get the rules 
+   \begin{align*}
+   (even)(even) = (odd)(odd) = even \\
+   (even)(odd) = (odd)(even) = odd.
+   \end{align*}
+   \item An m-cycle is an odd permutation if and if only m is even
+  \end{enumerate}
+  \end{nt}
+  
+  
+  \begin{prop}
+   The permutation $\sigma$ is odd if and only if the number of cycles of even length in its cycle decomposition is odd. 
+  \end{prop}
+  
+  
+  \begin{nt}
+   $A_n$ is a non-abelian simple group for all $n \geq 5$.
+  \end{nt}
+  
   
 \end{document}
