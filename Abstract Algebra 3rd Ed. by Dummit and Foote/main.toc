@@ -20,3 +20,4 @@
 \contentsline {subsection}{\numberline {4.2}Group Acting on Themselves by Left Multiplication - Cayley's Theorem}{11}{}%
 \contentsline {subsection}{\numberline {4.3}Groups Acting on Themselves by Conjugation - The Class Equation}{12}{}%
 \contentsline {subsection}{\numberline {4.4}Automorphisms}{13}{}%
+\contentsline {subsection}{\numberline {4.5}Sylow's Theorem}{14}{}%

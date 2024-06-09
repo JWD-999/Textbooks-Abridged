@@ -157,6 +157,82 @@ When $G$ is a finite group of order $n$ it is convenient to label the elements o
  
  
  \subsection{Automorphisms}
+ 
+ 
+ \begin{dfn}
+  Let $G$ be a group. An isomorphism from $G$ onto itself is called an \textit{automorphism} of $G$. The set of all automorphisms of $G$ is denoted Aut$(G)$. 
+ \end{dfn}
+ 
+ 
+ \begin{nt}
+  Aut$(G)$ is a group under composition.
+ \end{nt}
+ 
+ 
+ \begin{prop}
+  Let $H$ be a normal subgroup of the group $G$. Then $G$ acts by conjugation on $H$ as automorphisms of $H$. More specifically, the action of $G$ on $H$ by conjugation is defined for each $g \in G$ by 
+  \[ h\mapsto ghg^{-1}\qquad \text{for each } h \in H.\]
+  For each $g \in G$, conjugation by $g$ is an automorphism of $H$. The permutation representation afforded by this action is a homomorphism of $G$ into Aut$(H)$ with kernel $C_G(H)$. In particular, $G/C_G(H)$ is isomorphic to a subgroup of Aut$(H)$.
+ \end{prop}
+ 
+ 
+ \begin{cor}
+  If $K$ is any subgroup of the group $G$ and $g\in G$, then $K \cong gKg^{-1}$. Conjugate elements and conjugate subgroups have the same order.  
+ \end{cor}
+ 
+ 
+ \begin{cor}
+  For any subgroup $H$ of a group $G$, the quotient group $N_G(H)/C_G(H)$ is isomorphic to a subgroup of Aut$(H)$. In particular, $G/Z(G)$ is isomorphic to a subgroup of Aut$(G)$.
+ \end{cor}
+ 
+ 
+ \begin{dfn}
+  Let $G$ be a group and let $g \in G$. Conjugation by $g$ is called an \textit{inner automorphism} of $G$ and the subgroup of Aut$(G)$ consisting of all inner automorphisms is denoted Inn$(G)$.
+ \end{dfn}
+ 
+ 
+ \begin{dfn}
+  A subgroup $H$ of a group $G$ is called \textit{characteristic} in $G$, denoted $H$ char $G$, if every automorphism of $G$ maps $H$ to itself, i.e., $\sigma(H)=H$ for all $\sigma \in$ Aut$(G)$.
+ \end{dfn}
+ 
+ 
+ \begin{nt}
+  ~\begin{enumerate}
+    \item Characteristic subgroups are normal,
+    \item if $H$ is the unique subgroup of a given order, then $H$ is characteristic in $G$, and
+    \item if $K$ char $H$ and $H \nor G$, then $K \nor G$.
+   \end{enumerate}
+ \end{nt}
+
+ 
+ \begin{prop}
+  The automorphism group of the cyclic group of order $n$ is isomorphic to $(\Z/n\Z)^\times$, an abelian group of order $\phi(n)$ (where $\phi$ is Euler's function).
+ \end{prop}
+ 
+ 
+ \begin{prop}
+  ~\begin{enumerate}
+    \item If $p$ is an odd prime and $n \in \Z^+$, then the automorphism group of the cyclic group of order $p$ is cyclic of order $p-1$. More generally, the automorphism group of the cyclic grup of order $p^n$ is cyclic of order $p^{n-1}(p-1)$.
+    \item For all $n\geq 3$ the automorphism group of the cyclic group of order $2^n$ is isomorphic to $Z_2 \times Z_{2^{n-2}}$, and in particular is not cyclic but has a cyclic subgroup of index 2.
+    \item Let $p$ be a prime and let $V$  be an abelian group (written additively)with the property that $pv=0$ for all $v\in V$. If $|V|=p^n$, then $V$ is an $n$-dimensional vector space over the field $\F_p = \Z/p\Z$. The automorphisms of $V$ are precisely the nonsingular linear transformations from $V$ to itself, that is 
+    \[\text{Aut}(V) \cong GL(V) \cong GL_n(\F_p).\]
+    In particular, the order of Aut$(V)$ is given in section 1.4.
+    \item For all $n \neq 6$ we have Aut$(S_n) = Inn(S_n) \cong S_n$. For $n = 6$ we have \\ $|\text{Aut}(S_6):\text{Inn}(S_6)| = 2$.
+    \item Aut$(D_8) \cong D_8$ and Aut$(Q_8) \cong S_4$. 
+   \end{enumerate}
+ \end{prop}
+ 
+ 
+ \subsection{Sylow's Theorem}
+
+
+
+
+
+
+
+
+
 
 
 
