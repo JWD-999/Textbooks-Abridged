@@ -95,8 +95,68 @@ When $G$ is a finite group of order $n$ it is convenient to label the elements o
  
  
  \subsection{Groups Acting on Themselves by Conjugation - The Class Equation}
-
-
+ 
+ 
+ \begin{nt}
+  In this section we consider a group $G$ acting on itself by \textit{conjugation}
+  \[g\cdot a = gag^{-1} \quad \text{for all } g\in G, a\in G\]
+ \end{nt}
+ 
+ 
+ \begin{dfn}
+  Two elements $a$ and $a$ of $G$ are said to be \textit{conjugate} if $G$ if there is some $g\in G$ such that $b = gag^{-1}$ (i.e., if and only if they are in some orbit of $G$ acting on itself by conjugation). The orbits of $G$ acting on itself by conjugation are called \textit{conjugacy classes} of $G$.
+ \end{dfn}
+ 
+ 
+ \begin{dfn}
+  Two subsets $S$ and $T$ of $G$ are said to be \textit{conjugate in} $G$ if there is some $g \in G$ such that $T = gSg^{-1}$ (i.e., if and only if they are in the same orbit of $G$ acting on its subsets by conjugation). 
+ \end{dfn}
+ 
+ 
+ \begin{prop}
+  The number of conjugates of a subset $S$ in a group $G$ is the index of the normalizer of $S$, $|G:N_G(S)|$. In particular, the number of conjugates of an element $s$ of $G$ is the index of the centralizer of $s$, $|G:C_g(s)|$.
+ \end{prop}
+ 
+ 
+ \begin{thm}
+  (The Class Equation) Let $G$ be a finite group and let $g_1,g_2, \ldots ,g_r$ be representatives of the distinct conjugacy classes of $G$ not contained in the center $Z(G)$ of $G$. Then 
+  \[|G| = |Z(G)| + \sum_{i=1}^r |G:C_G(g_i)|.\]
+ \end{thm}
+ 
+ 
+ \begin{thm}
+  If $p$ is a prime and $P$ is a group of prime order $p^\alpha$ for some $\alpha \geq 1$, then $P$ has a nontrivial center: $Z(P) \neq 1$.
+ \end{thm}
+ 
+ 
+ \begin{prop}
+  Let $\sigma,\tau$ be elements of the symmetric group $S_n$ and suppose $\sigma$ has cycle decomposition 
+  \[(a_1a_2 \ldots a_{k_1})(b_1 b_2 \ldots b_{k_2})\ldots.\]
+  Then $\tau \sigma \tau^{-1}$ has cycle decomposition
+  \[(\tau(a_1) \tau(a_2) \ldots \tau(a_{k_1})) (\tau(b_1) \tau(b_2) \ldots \tau(b_{k_2})) \ldots,\]
+  that is $\tau \sigma \tau^{-1}$ is obtained from $\sigma$ by replacing each $i$ in the cycle decomposition for $\sigma$ by the entry $\tau(i)$.
+ \end{prop}
+ 
+ 
+ \begin{dfn}
+  ~\begin{enumerate}
+    \item If $\sigma \in S_n$ is the product of disjoint cycles of length $n_1, n_2, \ldots , n_r$ with $n_1 \leq n_2 \leq \ldots \leq n_r$ (including its 1-cycles) then the integers $n_1, n_2, \ldots , n_r$ are called the \textit{cycle type} of $\sigma$.
+    \item If $n \in \Z^+$, a \textit{partition} of $n$ is any nondecreasing sequence of positive integers whose sum is $n$.
+   \end{enumerate}
+ \end{dfn}
+ 
+ 
+ \begin{prop}
+  Two elements of $S_n$ are conjugate in $S_n$ if and only if they have the same cycle type. The number of conjugacy classes of $S_n$ equals the number of partitions of $n$.
+ \end{prop}
+ 
+ 
+ \begin{thm}
+  $A_5$ is a simple group.
+ \end{thm}
+ 
+ 
+ \subsection{Automorphisms}
 
 
 

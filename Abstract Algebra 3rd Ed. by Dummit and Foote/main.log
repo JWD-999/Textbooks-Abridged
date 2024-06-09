@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  7 JUN 2024 21:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  8 JUN 2024 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -234,7 +234,7 @@ Package amsmath Warning: Foreign command \atop;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 128.
 
-) (./ch3/ch3.tex [5] [6] [7] [8] [9]) (./ch4/ch4.tex [10] [11]) [12]
+) (./ch3/ch3.tex [5] [6] [7] [8] [9]) (./ch4/ch4.tex [10] [11] [12]) [13]
 (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -263,10 +263,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2023/texmf-dist
 e1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/ams
 fonts/symbols/msbm10.pfb>
-Output written on main.pdf (12 pages, 205414 bytes).
+Output written on main.pdf (13 pages, 210104 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 122 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
