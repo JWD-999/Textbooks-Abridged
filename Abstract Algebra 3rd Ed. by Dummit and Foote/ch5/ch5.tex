@@ -1,0 +1,90 @@
+\documentclass[../main]{subfiles}
+
+
+\begin{document}
+
+\section{Direct and Semidirect Products and \\ Abelian Groups}
+
+
+\subsection{Direct Products}
+
+
+\begin{dfn}
+ ~\begin{enumerate}
+   \item The \textit{direct product} $G_1 \times G_2 \times \cdots \times G_n$ of the groups $G_1, G_2, \ldots , G_n$ with operations $\star_1,\star_2, \ldots , \star_n$, respectively, is the set of $n$-tuples $(g_1,g_2, \ldots , g_n)$ where $g_i\in G_i$ with the operation defined componentwise: 
+   \[(g_1,g_2, \ldots ,g_n)\star (h_1,h_2, \ldots ,h_n) = (g_1 \star_1 h_1, g_2 \star_2 h_2. \ldots g_n\star_n h_n).\]
+   \item Similarly, the \textit{direct product} $G_1 \times G_2 \times \cdots$ of the groups $G_1, G_2, \ldots$ with operations $\star_1,\star_2, \ldots$, respectively, is the set of sequences $(g_1,g_2, \ldots)$ where $g_i\in G_i$ with the operation defined componentwise: 
+   \[(g_1,g_2, \ldots)\star (h_1,h_2, \ldots) = (g_1 \star_1 h_1, g_2 \star_2 h_2. \ldots).\]
+  \end{enumerate}
+\end{dfn}
+
+
+\begin{prop}
+ If $G_1, \ldots, G_n$ are groups, their direct product is a group of order \\ $|G_1||G_2|\cdots |G_n|$ (if any $G_i$ is infinite, so is the direct product).
+\end{prop}
+
+
+\begin{prop}
+ Let $G_1, G_2, \ldots , G_n$ be group and let $G = G_1 \times G_2 \times \cdots \times G_n$ be their direct product.
+ \begin{enumerate}
+  \item For each fixed $i$ the set of elements of $G$ which have the identity of $G_j$ in the $j^{\text{th}}$ position for all $j \neq i$ and arbitrary elements of $G_i$ in position $i$ is a subgroup of $G$ isomorphic $G_i$:
+  \[G_i \cong \{(1,1,\ldots, 1, g_i,1,\ldots, 1) \mid g_i\in G_i\},\]
+  (here $g_i$ appears in the $i^{\text{th}}$ position). If we identity $G_i$ with this subgroup, then $G_i \nor G$ and 
+  \[G/G_i \cong G_1\times \cdots \times G_{i-1} \times G_{i+1} \times \cdots \times G_n.\]
+  \item For each fixed $i$ define $\pi_i \colon G \to G_i$ by 
+  \[\pi_i((g_1,g_2,\ldots,g_n)) = g_i.\]
+  Then $\pi_i$ is a surjective homomorphism with
+  \begin{align*}
+   \text{ker}\pi_i &= \{(g_1,g_2, \ldots , g_{i-1}, 1, g_{i+1}) \mid g_j \in G_j \text{ for all } j\neq i\} \\
+   &\cong G_1\times \cdots \times G_{i-1} \times G_{i+1} \times \cdots \times G_n
+  \end{align*}
+  (here 1 appears in position $i$).
+  \item Under the identifications in part 1, if $x \in G_i$ and $y\in G_j$ for some $i \neq j$, then $xy = yx$. 
+ \end{enumerate}
+\end{prop}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+\end{document}
