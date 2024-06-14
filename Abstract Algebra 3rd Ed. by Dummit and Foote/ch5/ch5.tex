@@ -42,10 +42,103 @@
   \item Under the identifications in part 1, if $x \in G_i$ and $y\in G_j$ for some $i \neq j$, then $xy = yx$. 
  \end{enumerate}
 \end{prop}
- 
- 
- 
- 
+
+
+\subsection{The Fundamental Theorem of Finitely Generated Abelian Groups}
+
+
+\begin{dfn}
+ ~\begin{enumerate}
+   \item A group $G$ is \textit{finitely generated} if there is some finite subset $A$ of $G$ such that $G = \langle A \rangle$.
+   \item For each $r\in \Z$ with $r \geq 0$ let $\Z^r = \Z \times \Z \times \cdots \times \Z$ be the direct product of r copies of the group $\Z$, where $\Z^0 = 1$. The group $\Z^r$ is called the \textit{free abelian group of order $r$}.
+  \end{enumerate}
+\end{dfn}
+
+
+\begin{thm}
+ (The Fundamental Theorem of Finitely Generated Abelian Groups) Let $G$ be a finitely generated abelian group. Then
+ \begin{enumerate}
+  \item \[G \cong \Z^r \times Z_{n_1} \times Z_{n_2} \times \cdots \times Z_{n_s}, \]
+  for some $r,n_1,n_2, \ldots , n_s$ satisfying the following conditions:
+    \begin{enumerate}
+        \item $r \geq 0$ and $n_j \geq 2$ for all $j$, and 
+        \item $n_{i+1} \mid n_i$ for all $1 \leq i \leq s-1$
+    \end{enumerate}
+    
+    \item the expression in 1. is unique: if $G \cong \Z^t \times Z_{m_1} \times Z_{m_2} \times \cdots \times Z_{m_u}$, where $t$ and $m_1, m_2, \ldots , m_u$ satisfy (a) and (b), then $t = r$ and $m_i = n_i$ for all $i$. 
+ \end{enumerate}
+\end{thm}
+
+
+\begin{dfn}
+ The integer $r$ in Theorem 3 is called the \textit{free rank} or \textit{Betti number} of $G$ and the integers $n_1, n_2, \ldots , n_s$ are called the \textit{invariant factors} of $G$. The description of $G$ in Theorem 3(1) is called the \textit{invariant factor decomposition} of $G$.
+\end{dfn}
+
+
+\begin{nt}
+ There is a bijection between the set of isomorphism classes of finite abelian groups of order $n$ and the set of integer sequences $n_1, n_2, \ldots , n_s$ such that 
+ \begin{enumerate}
+  \item $n_j \geq 2$ for all $j \in \{1, 2, \ldots , s\}$,
+  \item $n_{i+1} \mid n_i, 1 \leq i \leq s-1$, and 
+  \item $n_1 n_2 \cdots n_s = n$.
+ \end{enumerate}
+ Also notice that every prime divisor of $n$ must be a divisor of $n_1$ due to (2).
+\end{nt}
+
+
+\begin{cor}
+ If $n$ is the product of distinct primes, then up to isomorphism the only abelian group of order $n$ is the cyclic group of order $n$, $Z_n$.
+\end{cor}
+
+
+\begin{thm}
+ Let $G$ be an abelian group of order $n > 1$ and let the unique factorization of $n$ into distinct prime powers be 
+ \[ n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}. \]
+ Then 
+ \begin{enumerate}
+  \item $G \cong A_1 \times A_2 \times \cdots \times A_k$, where $|A_i| = p_i^{\alpha_i}$
+  
+  \item for each $A \in \{ A_1, A_2, \ldots , A_k \}$ with $|A| = p^\alpha$,
+  \[ A \cong Z_{p^{\beta_1}} \times Z_{p^{\beta_2}} \times \cdots \times Z_{p^{\beta_t}} \]
+  with $\beta_1 \geq \beta_2 \geq \ldots \geq \beta_t \geq 1$ and $\beta_1 + \beta_2 + \ldots + \beta_t = \alpha$ (where $t$ and $\beta_1, \beta_2, \ldots , \beta_t$ depend on $i$)
+  
+  \item the decomposition in 1. and 2. is unique, i.e., if $G \cong B_1 \times B_2 \times \cdots \times B_m$, with $|B_i| = p_i^{\alpha_i}$ for all $i$, then $B_i \cong A_i$ and $B_i$ and $A_i$ have the same invariant factors.
+ \end{enumerate}
+\end{thm}
+
+
+\begin{dfn}
+ The integers $p^{\beta_j}$ described in the proceeding theorem are called the \textit{elementary divisors} of $G$. The description of $G$ in Theorem 5(1) and 5(2) is called the \textit{elementary divisor decomposition} of $G$. 
+\end{dfn}
+
+
+\begin{nt}
+ For a group of order $p^\beta$ the invariant factors will be $p^{\beta_1}, p^{\beta_2}, \ldots , p^{\beta_t}$ such that
+ \begin{enumerate}
+  \item $\beta_j \geq 1$ for all $j \in \{1,2, \ldots ,t\}$,
+  
+  \item $\beta_i \geq \beta_{i+1}$ for all $i$, and 
+  
+  \item $\beta_1 + \beta_2 + \ldots + \beta_t = \beta$
+ \end{enumerate}
+\end{nt}
+
+
+\begin{prop}
+ Let $m,n \in \Z^+$.
+ \begin{enumerate}
+  \item $Z_m \times Z_n \cong Z_{mn}$ if and only if $(m,n) = 1$.
+  
+  \item If $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k}$ then $Z_n \cong Z_{p_1^{\alpha_1}} \times Z_{p_2^{\alpha_2}} \times \cdots \times Z_{p_k^{\alpha_k}}$.
+ \end{enumerate}
+\end{prop}
+
+
+
+
+
+
+
  
  
  

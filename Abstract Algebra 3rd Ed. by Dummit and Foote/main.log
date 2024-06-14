@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  13 JUN 2024 19:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.27)  14 JUN 2024 14:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -224,26 +224,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
+ [1
 
-(./ch0/ch0.tex [1
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./ch0/ch0.tex)
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./ch1/ch1.tex
- [2]) (./ch2/ch2.tex [3] [4]) (./ch3/ch3.tex [5] [6] [7]
-[8] [9]) (./ch4/ch4.tex [10] [11] [12] [13] [14]) (./ch5/ch5.tex [15]) [16]
-(./main.aux)
+(./ch1/ch1.tex [2]) (./ch2/ch2.tex [3] [4]) (./ch3/ch3.tex [5] [6] [7] [8]
+[9]) (./ch4/ch4.tex [10] [11] [12] [13] [14]) (./ch5/ch5.tex [15] [16] [17])
+[18] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2613 strings out of 474221
- 38211 string characters out of 5750188
- 1937978 words of memory out of 5000000
- 24840 multiletter control sequences out of 15000+600000
- 567179 words of font info for 71 fonts, out of 8000000 for 9000
+ 2615 strings out of 474221
+ 38241 string characters out of 5750188
+ 1938978 words of memory out of 5000000
+ 24842 multiletter control sequences out of 15000+600000
+ 567486 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,65p,601b,344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,14n,65p,601b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2023/texmf-di
@@ -259,10 +259,10 @@ pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmti12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
 /symbols/msam10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/sym
 bols/msbm10.pfb>
-Output written on main.pdf (16 pages, 230261 bytes).
+Output written on main.pdf (18 pages, 239476 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
