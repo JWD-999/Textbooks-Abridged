@@ -7,7 +7,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{amsmath}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Looks
 \usepackage[a4paper, margin=1in]{geometry}
+
+\usepackage{xcolor} %package for color options
+\definecolor{maroon}{HTML}{600000}
+\definecolor{off white}{HTML}{f0f0f0}
+\definecolor{purple}{HTML}{5c0dbc}
+\definecolor{dark purple}{HTML}{2c1072}
+\definecolor{dark teal}{HTML}{2d557c}
+
+%\pagecolor{off white} %This combo is easier on my eyes
+%\color{maroon}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,6 +38,10 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\F}{\mathbb{F}}
 \newcommand{\nor}{\trianglelefteq}
+
+\let\temp\phi %Switching phi and varphi
+\let\phi\varphi
+\let\varphi\temp
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{subfiles} % Best loaded last in the preamble
@@ -38,6 +53,7 @@
 
 \maketitle
 \tableofcontents
+
 
 \part{Group Theory}
 
