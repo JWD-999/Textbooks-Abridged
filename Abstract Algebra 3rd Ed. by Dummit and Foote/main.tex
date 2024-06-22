@@ -1,10 +1,21 @@
 \documentclass[12pt]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Basic packages
 \usepackage[utf8]{inputenc}
 \usepackage{amsthm}
 \usepackage{amsmath}
 \usepackage{amssymb}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\usepackage{amsmath}
+
+\usepackage{quiver} % Use https://q.uiver.app/ to draw commutative diagrams
+
+%\usepackage{hyperref} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Table stuff
+\usepackage{array} %adds options to table layout (needed for thing below)
+\newcolumntype{C}{>{\centering\arraybackslash}m} %Center text wrap, need width (C{width})
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Looks
@@ -24,7 +35,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Theorem environments
 \theoremstyle{definition}
-\newtheorem{thm}{Theorem}
+\newtheorem{thm}{Theorem}%[section] %not sure on if I should follow the books style here or not
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
 \newtheorem{lem}[thm]{Lemma}
@@ -44,10 +55,16 @@
 \let\varphi\temp
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{subfiles} % Best loaded last in the preamble
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Title info
 \title{Dummit and Foote Abridged}
 \author{}
+\date{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
@@ -80,5 +97,10 @@
 \setcounter{thm}{0}
 
 \subfile{ch5/ch5}
+
+\setcounter{thm}{0}
+
+\subfile{ch6/ch6}
+
 
 \end{document}
