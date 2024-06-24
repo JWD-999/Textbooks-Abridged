@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "a4e638524d1f820f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d1d5138ec4657dfc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0652e352dd33ad8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0b5e34ed2f381f32",
+    "type": "split",
+    "children": [
+      {
+        "id": "77269743e09cdd24",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2f86ef4d77a94cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "80606a08bfc96475",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aa7b319d1db9624e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ef2102ff8a5db847",
+    "type": "split",
+    "children": [
+      {
+        "id": "12e0d256892a5eb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae510bf050c8987e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "85ed038b2a90a864",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f482e0e9ae4e7461",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "90f30d006de4c271",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d0652e352dd33ad8",
+  "lastOpenFiles": [
+    "Abstract Algebra 3rd Ed. by Dummit and Foote.md",
+    "README.md",
+    "Abstract Algebra 3rd Ed. by Dummit and Foote/main.pdf",
+    "().md",
+    "(Abstract Algebra 3rd Ed. by Dummit and Foote/main.pdf.md",
+    "(Abstract Algebra 3rd Ed. by Dummit and Foote",
+    "Abstract Algebra 3rd Ed. by Dummit and Foote/ch0/ch0.pdf"
+  ]
+}
