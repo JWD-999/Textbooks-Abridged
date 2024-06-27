@@ -8,6 +8,97 @@
 \subsection{$p$-Groups, Nilpotent Groups, and Solvable Groups}
 
 
+\begin{dfn}
+ A \textit{maximal subgroup} of a group $G$ is a proper subgroup $M$ of $G$ such that there is no subgroups $H$ of $G$ with $M < H < G$.
+\end{dfn}
+
+
+\begin{thm}
+ Let $p$ be a prime and let $P$ be a group of order $p^a$, $a\geq 1$. Then
+ \begin{enumerate}
+  \item The center of $P$ is nontrivial: $Z(P) \neq 1$.
+  
+  \item If $H$ is a nontrivial normal subgroup of $P$ then $H$ contains a subgroup of order $p^b$ that is normal in $P$ for each divisor $p^b$ of $|H|$. In particular, $P$ has a normal subgroup of order $p^b$ for every $b \in \{0,1, \ldots , a\}$.'
+  
+  \item If $H < P$ then $H < N_P(H)$ (i.e., every proper subgroup of $P$ is a proper subgroup of its normalizer in $P$).
+  
+  \item Every maximal subgroup of $P$ is of index $p$ and is normal in $P$. 
+ \end{enumerate}
+\end{thm}
+
+
+\begin{dfn}
+ ~\begin{enumerate}
+   \item For any (finite or infinite) group $G$ define the following subgroups inductively:
+   \[ Z_0(G) = 1 \qquad Z_1(G) = Z(G) \]
+   and $Z_{i+1}(G)$ is the subgroup of $G$ containing $Z_i(G)$ such that 
+   \[ Z_{i+1}(G)/Z_i(G) = Z(G/Z_i(G)) \]
+   (i.e., $Z_{i+1}(G)$ is the complete preimage in $G$ of the center of $G/Z_i(G)$ under the natural projection). The chain of subgroups
+   \[ Z_0(G) \leq Z_1(G) \leq Z_2(G) \leq \ldots \]
+   is called the \textit{upper central series of $G$}. (The use of the term ``upper'' indicates that $Z_i(G) \leq Z_{i+1}(G)$.)
+   
+   \item A group $G$ is called \textit{nilpotent} if $Z_c(G) = G$ for some $c\in \Z$. The smallest $c$ is called the \textit{nilpotence class} of $G$.
+  \end{enumerate}
+\end{dfn}
+
+
+\begin{nt}
+ ~\begin{enumerate}
+   \item If $G$ is abelian then it is nilpotent since $G = Z(G) =Z_1(G)$.
+   
+   \item The following containments are proper
+   \[ \text{cyclic groups} \subset \text{abelian groups} \subset \text{nilpotent groups} \subset \text{solvable groups} \subset \text{all groups} \]
+   
+   \item For any finite group there must, by order considerations, be an integer $n$ such that
+   \[ Z_n(G) = Z_{n+1} = Z_{n+2} = \cdots. \]
+   
+   \item For infinite groups $G$ it may happen that all $Z_i(G)$ are proper subgroups of $G$ (so $G$ is not nilpotent) but 
+   \[ G = \bigcup_{i=0}^\infty Z_i(G). \]
+  \end{enumerate}
+\end{nt}
+
+
+\begin{prop}
+ Let $p$ be a prime and let $P$ be a group of order $p^a$. Then $P$ is nilpotent of nilpotence class at most $a-1$ for all $a\geq 2$ (and class equal to $a$ when $a = 0$ or 1).
+\end{prop}
+
+
+\begin{thm}
+ Let $G$ be a finite group, let $p_1, p_2, \ldots, p_s$ be the distinct primes dividing its order and let $P_i \in Syl_{p_i}(G), 1\leq i \leq s$. Then the following are equivalent:
+ \begin{enumerate}
+  \item $G$ is nilpotent 
+  
+  \item if $H < G$ then $H < N_G(H)$, i.e., every proper subgroup of $G$ is a proper subgroup of its normalizer in $G$
+  
+  \item $P_i \nor G$ for $1 \leq i \leq s$, i.e., every Sylow subgroup is normal in $G$
+  
+  \item $G \cong P_1 \times P_2 \times \cdots \times P_s$.
+ \end{enumerate}
+\end{thm}
+
+
+\begin{cor}
+ A finite abelian group is the direct product of its Sylow subgroups. 
+\end{cor}
+
+
+\begin{prop}
+ If $G$ is a finite group such that for all positive integers $n$ dividing its order, $G$ contains at most $n$ elements $x$ satisfying $x^n = 1$, then $G$ is cyclic.
+\end{prop}
+
+
+\begin{prop}
+ (Frattini's Argument) Let $G$ be a finite group, let $H$ be a normal subgroup of $G$ and let $P$ be a Sylow $p$-subgroup of $H$. Then $G = H N_G(P)$ and $|G : H|$ divides $|N_G(P)|$.
+\end{prop}
+
+
+\begin{prop}
+ A finite group is nilpotent if and only if every maximal subgroup is normal. 
+\end{prop}
+
+
+
+
 
 
 
