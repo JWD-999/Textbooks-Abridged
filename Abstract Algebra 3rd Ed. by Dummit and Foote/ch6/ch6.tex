@@ -97,28 +97,138 @@
 \end{prop}
 
 
+\begin{dfn}
+ For any (finite or infinite) group $G$ define the following subgroups inductively:
+ \[ G^0 = G, \qquad G^1 = [G,G] \quad \text{and} \quad G^{i+1} = [G,G^i]. \]
+ The chain of groups
+ \[ G^0 \geq G^1 \geq G^2 \geq \ldots \]
+ is called the \textit{lower central series of $G$}. (The term ``lower'' indicates that $G^i \geq G^{i+1}$.)
+\end{dfn}
 
 
+\begin{thm}
+ A group $G$ is nilpotent if and only if $G^n = 1$ for some $n \geq 0$. More precisely, $G$ is nilpotent of class $c$ if and only if $c$ is the smallest nonnegative integer such that $G^c = 1$. If $G$ is nilpotent of class $c$ then 
+ \[ G^{c-i} \leq Z_i(G) \quad \text{for all } i \in \{0,1,2, \ldots, c\}. \]
+\end{thm}
 
 
+\begin{nt}
+ ~\begin{enumerate}
+   \item If $G$ is abelian, we have $G' = G^1 = 1$
+   
+   \item If $G$ is a finite group there must, by order considerations, be an integer $n$ such that 
+   \[ G^n = G^{n+1} = G^{n+2} = \cdots. \]
+  \end{enumerate}
+\end{nt}
 
 
+\begin{dfn}
+ For any group $G$ define the following sequence of subgroups inductively:
+ \[ G^{(0)} = G, \qquad G^{(1)} = [G,G], \quad \text{and} \quad G^{(i+1)} = [G^{(i)}, G^{(i)}] \quad \text{for all } i \geq 1. \]
+ This series of subgroups is called the \textit{derived} or \textit{commutator series} of $G$. 
+\end{dfn}
 
 
+\begin{thm}
+ A group $G$ is solvable if and only if $G^{(n)} = 1$ for some $n \geq 0$. 
+\end{thm}
 
 
+\begin{prop}
+ Let $G$ and $K$ be groups, let $H$ be a subgroup of $G$ and let $\phi \colon G \to K$ be a surjective homomorphism.
+ \begin{enumerate}
+  \item $H^{(i)} \leq G^{(i)}$ for all $i \geq 0$. In particular, if $G$ is solvable, then so is $H$, i.e., subgroups of solvable groups are solvable (and the solvable length  of $H$ is less than or equal to the solvable length of $G$).
+  
+  \item $\phi(G^{(i)}) = K^{(i)}$. In particular, homomorphic images and quotient groups of solvable groups are solvable (of solvable length less than or equal to that of the domain group).
+  
+  \item If $N$ is normal in $G$ and both $N$ and $G/N$ are solvable then so is $G$. 
+ \end{enumerate}
+\end{prop}
 
 
+\begin{thm}
+ Let $G$ be a finite group. 
+ \begin{enumerate}
+  \item (Burnside) If $|G| = p^a q^b$ for some primes $p$ and $g$, then $G$ is solvable.
+  
+  \item (Philip Hall) If for every prime $p$ dividing $|G|$ we factor the order of $G$ as $|G| = p^a m$ where $(p,m) = 1$, and $G$ has a subgroup of order $m$, then $G$ is solvable (i.e., if for all primes $p$, $G$ has a subgroup whose index equals the order of a Sylow $p$-subgroup, then $G$ is solvable --- such subgroups are called Sylow $p$-complements).
+  
+  \item (Feit-Thompson) If $|G|$ is odd then $G$ is solvable.
+  
+  \item (Thompson) If for every pair of elements $x,y \in G$, $\langle x,y \rangle$ is a solvable group, then $G$ is solvable.
+ \end{enumerate}
+\end{thm}
 
 
+\subsection{Applications in Groups of Medium Order}
 
 
+\begin{prop}
+ ~\begin{enumerate}
+   \item If $G$ has no subgroup of index 2 and $G \leq S_k$, then $G \leq A_k$.
+   
+   \item If $P \in Syl_p(S_k)$ for some odd prime $p$, then $P \in Syl_p(A_k)$ and $|N_{A_k}(P)| = \frac{1}{2} |N_{S_k}(P)|$.
+  \end{enumerate}
+\end{prop}
+
+
+\begin{lem}
+ In a finite group $G$ is $n_p \not\equiv 1 \pmod{p^2}$, then there are distinct Sylow $p$-subgroups $P$ and $R$ of $G$ such that $P \cap R$ is of index $p$ in both $P$ and $R$ (hence is normal in each).
+\end{lem}
+
+
+\addtocounter{thm}{2}
+
+
+\subsection{A word on Free Groups}
+
+
+\begin{nt}
+ The way that a free group is defined is a bit involved and can be read on page 216
+\end{nt}
+
+
+\begin{thm}
+ $F(S)$ is a group under the binary operation defined on page 216.
+\end{thm}
+
+
+\begin{thm}
+ Let $G$ be a group, $S$ a set and $\phi \colon S \to G$ a set map. Then there is a unique group homomorphism $\Phi \colon F(S) \to G$ such that the following diagram commutes:
  
+ \[\begin{tikzcd}
+	S && {F(S)} \\
+	&& G
+	\arrow["{\text{inclusion}}", from=1-1, to=1-3]
+	\arrow["\phi"', from=1-1, to=2-3]
+	\arrow["\Phi", from=1-3, to=2-3]
+ \end{tikzcd}\]
+\end{thm}
 
 
+\begin{cor}
+ $F(S)$ is unique up to a unique isomorphism which is the identity map on the set $S$.
+\end{cor}
 
 
+\begin{dfn}
+ The group $F(S)$ is called the \textit{free group} on the set $S$. A group $F$ is a \textit{free group} if there is some set $S$ such that $F = F(S)$ --- in this case we call $S$ a set of \textit{free generators} (or a \textit{free basis}) of $F$. The cardinality of $S$ is called the \textit{rank} of the free group. 
+\end{dfn}
 
+
+\begin{thm}
+ (Schreier) Subgroups of a free group are free.
+\end{thm}
+
+
+\begin{dfn}
+ Let $S$ be a subset of a group $G$ such that $G = \langle S \rangle$.
+ \begin{enumerate}
+  \item A \textit{presentation} for $G$ is a pair $(S, R)$, where $R$ is a set of words in $F(S)$ such that the normal closure of $\langle R \rangle$ in $F(S)$ (the smallest normal subgroup containing $\langle R \rangle$) equals the kernel of the homomorphism $\pi \colon F(S) \to G$ (where $\pi$ extends the identity map from $S$ to $S$). The elements of $S$ are called \textit{generators} and those of $R$ are called \textit{relations} of $G$.
+  
+  \item We say that $G$ is \textit{finitely generated} if there is a presentation $(S,R)$ such that $S$ is a finite set and we say $G$ is \textit{finitely presented} if there is a presentation $(S,R)$ with both $S$ and $R$ finite sets.
+ \end{enumerate}
+\end{dfn}
 
 
 
