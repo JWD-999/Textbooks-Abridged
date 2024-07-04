@@ -36,3 +36,4 @@
 \contentsline {part}{II\hspace {1em}Ring Theory}{25}{}%
 \contentsline {section}{\numberline {7}Introduction to Rings}{25}{}%
 \contentsline {subsection}{\numberline {7.1}Basic Definitions and Examples}{25}{}%
+\contentsline {subsection}{\numberline {7.2}Examples: Polynomial Rings, Matrix Rings, and Group Rings}{26}{}%
