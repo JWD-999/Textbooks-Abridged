@@ -109,7 +109,142 @@
 
 
 \subsection{Examples: Polynomial Rings, Matrix Rings, and Group Rings}
-%might skip
+
+% Might want to add the construction of these rings'
+
+
+\begin{prop}
+ Let $R$ be an integral domain and let $p(x), q(x)$ be nonzero elements of $R[x]$. Then 
+ \begin{enumerate}
+  \item $\text{degree} p(x) q(x) = \text{degree} p(x) + \text{degree} q(x)$,
+  
+  \item The units of $R[x]$ are just the units of $R$,
+  
+  \item $R[x]$ is an integral domain. 
+ \end{enumerate}
+\end{prop}
+
+
+\subsection{Ring Homomorphisms and Quotient Rings}
+
+
+\begin{dfn}
+ Let $R$ and $S$ be rings.
+ \begin{enumerate}
+  \item A \textit{ring homomorphism} is a map $\phi \colon R \to S$ satisfying
+  
+  \begin{enumerate}
+   \item $\phi(a + b) = \phi(a) + \phi(b)$ for all $a,b \in R$ (so $\phi$ is a group homomorphism on the additive groups) and 
+   
+   \item $\phi(ab) = \phi(a)\phi(b)$ for all $a,b \in R$.
+  \end{enumerate}
+  
+  \item The \textit{kernel} of the ring homomorphism $\phi$, denoted ker$\phi$, is the set of elements of $R$ that map to 0 in $S$. (i.e., the kernel of $\phi$ viewed as a homomorphism of additive groups).
+  
+  \item A bijective ring homomorphism is called an \textit{isomorphism}.
+ \end{enumerate}
+\end{dfn}
+
+
+\begin{prop}
+ Let $R$ and $S$ be rings and let $\phi \colon R \to S$ be a homomorphism.
+ \begin{enumerate}
+  \item The image of $\phi$ is a subring of $S$.
+  
+  \item The kernel of $\phi$ is a subring of $R$. Furthermore, if $\alpha \in$ker$\phi$ then $r\alpha$ and $\alpha r \in$ker$\phi$ for every $r\in R$, i.e., ker$\phi$ is closed under multiplication by elements from $R$.
+ \end{enumerate}
+\end{prop}
+
+
+\begin{dfn}
+ Let $R$ be a ring, let $I$ be a subset of $R$ and let $r \in R$.
+ \begin{enumerate}
+  \item $rI = \{ra \mid a\in I\} \quad \text{and} \quad Ir = \{ar \mid a\in I\}$.
+  
+  \item A subset $I$ of $R$ is a \textit{left Ideal} of $R$ if 
+  \begin{enumerate}
+   \item $I$ is a subring of $R$, and 
+   
+   \item $I$ is closed under left multiplication by elements of $R$, i.e., $rI \subseteq I$ for all $r\in R$.
+  \end{enumerate}
+  
+  Similarly $I$ is a \textit{right ideal} if (a) holds and in place of (b) one has 
+  
+  \begin{enumerate}[label = {(\alph*)'}]
+  \setcounter{enumii}{1}
+   \item $I$ is closed under right multiplication by elements from $R$, i.e., $Ir \subseteq I$ for all $r \in R$.
+  \end{enumerate}
+  
+  \item A subset $I$ that is both a left ideal and a right ideal is called an \textit{ideal} (or, for added emphasis, a \textit{two-sided ideal}) of $R$.
+ \end{enumerate}
+\end{dfn}
+
+
+\begin{prop}
+ Let $R$ be a ring and let $I$ be an ideal of $R$. Then the (additive) quotient group $R/I$ is a ring under the binary operations:
+ \[ (r + I) + (s + I) = (r+s)+I \qquad \textit{and} \qquad (r+I)\times (s+I) = (rs) +I \]
+ for all $r,s \in R$. Conversely, if $I$ is any subgroup such that the above operations are well defined, then $I$ is an ideal of $R$. 
+\end{prop}
+
+
+\begin{dfn}
+ When $I$ is an ideal of $R$ the ring $R/I$ with the operations in the previous proposition us called the \textit{quotient ring} of $R$ by $I$.
+\end{dfn}
+
+
+\begin{thm}
+ \begin{enumerate}
+  \item (The First Isomorphism Theorem for Rings) If $\phi \colon R \to S$ is a homomorphism of rings, then the kernel of $\phi$ is an ideal of $R$, the image of $\phi$ is a subring of $S$ and $R/$ker$\phi$ is isomorphic as a ring to $\phi(R)$.
+  
+  \item If $I$ is any ideal of $R$, then the map 
+  \[ R \to R/I \qquad \text{defined by} \qquad r \mapsto r+I \]
+  is a surjective ring homomorphism with kernel $I$ (this homomorphism is called the \textit{natural projection} of $R$ onto $R/I$). Thus every ideal is the kernel of a ring homomorphism and vice versa. 
+ \end{enumerate}
+\end{thm}
+
+
+\begin{thm}
+ Let $R$ be a ring.
+ \begin{enumerate}
+  \item (The Second Isomorphism Theorem for Rings) Let $A$ be a subring and let $B$ be an ideal of $R$. Then $A+B = \{a+b \mid a\in A, b\in B \}$ is a subring of $R$, $A \cap B$ is an ideal of $A$ and $(A+B)/B \cong A/(A \cap B)$.
+  
+  \item (The Third Isomorphism Theorem for Rings) Let $I$ and $J$ be ideals of $R$ with $I \subseteq J$. Then $J/I$ is an ideal of $R/I$ and $(R/I)/(J/I) \cong R/J$.
+  
+  \item (The Fourth or Lattice Isomorphism Theorem for Rings) Let $I$ be an ideal of $R$. The correspondence $A \leftrightarrow A/I$ is an inclusion preserving bijective between the set of subrings $A$ of $R$ that contain $I$ and the set of subrings of $R/I$. Furthermore, $A$ (a subring containing $I$) is an ideal of $R$ if and only if $A/I$ is an ideal of $R/I$.
+ \end{enumerate}
+\end{thm}
+
+
+\begin{dfn}
+ Let $I$ and $J$ be ideals of $R$. 
+ \begin{enumerate}
+  \item Define the \textit{sum} of $I$ and $J$ by $I+J = \{ a+b \mid a\in I, b\in J \}$.
+  
+  \item Define the \textit{product} of $I$ and $J$, denoted by $IJ$, to be the set of all finite sums of elements of the form $ab$ with $a \in I$ and $b \in J$.
+  
+  \item For any $n\geq 1$, define the \textit{$n^{\text{th}}$ power} of $I$, denoted $I^n$, to be the set consisting of all finite sums of elements of the form $a_1 a_2 \cdots a_n$ with $a_i \in I$ for all $i$. Equivalently, $I^n$ is defined inductively by defining $I^1 = I$ and $I^n = II^{n-1}$ for $n = 2, 3, \ldots$. 
+ \end{enumerate}
+\end{dfn}
+
+
+\subsection{Properties of Ideals}
+
+Throughout this section $R$ is a ring with identity $1 \neq 0$.
+
+
+\begin{dfn}
+ 
+\end{dfn}
+
+
+
+
+
+
+
+
+
+
 
 
 
